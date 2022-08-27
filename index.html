@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dome's Old School Essentials Character Builder</title>
+</head>
+<body>
+    <img src="https://cdn.shopify.com/s/files/1/0017/2330/1933/files/Logo_-_Black_-_High_Res_1024x1024.png?v=1638949430" alt="Old School Essentials Logo">
+    <div>
+        <form action="">
+            <label for="chName">Character Name:</label>
+            <input type="text" id="chName" name="'chName">
+            <label for="chClass">Class:</label>
+            <select name="chClass" id="chClass">
+                <option value="Acrobat">Acrobat</option>
+                <option value="Assassin">Assassin</option>
+                <option value="Barbarian">Barbarian</option>
+                <option value="Bard">Bard</option>
+                <option value="Cleric">Cleric</option>
+                <option value="Drow">Drow</option>
+                <option value="Druid">Druid</option>
+                <option value="Duergar">Duergar</option>
+                <option value="Dwarf">Dwarf</option>
+                <option value="Elf">Elf</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Gnome">Gnome</option>
+                <option value="Half-Elf">Half-Elf</option>
+                <option value="Halfling">Halfling</option>
+                <option value="Half-Orc">Half-Orc</option>
+                <option value="Illusionist">Illusionist</option>
+                <option value="Knight">Knight</option>
+                <option value="Magic-User">Magic-User</option>
+                <option value="Paladin">Paladin</option>
+                <option value="Ranger">Ranger</option>
+                <option value="Svirfneblin">Svirfneblin</option>
+                <option value="Thief">Thief</option>
+            </select>
+            <label for="chLevel">Level:</label>
+            <input type="text" id="chLevel" name="chLevel">
+            <label for="chPlayer">Player Name:</label>
+            <input type="text" id="chPlayer" name="chPlayer">
+            <label for="chAlign">Alignment:</label>
+            <select name="chAlign" id="chAlign">
+                <option value="Lawful">Lawful</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Chaotic">Chaotic</option>
+            </select>
+            <label for="chXP">XP:</label>
+            <input type="text" id="chXP" name="chXP">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <p>Are you using race as class?</p>
+            <select name="chType" id="chType">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <ul id="stats">
+            <li id="str">Strength</li>
+            <li id="int">Intelligence</li>
+            <li id="wis">Wisdom</li>
+            <li id="dex">Dexterity</li>
+            <li id="con">Constitution</li>
+            <li id="cha">Charisma</li>
+        </ul>
+        <button id="rollButton">Roll Stats</button>
+    </div>
+    <div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
