@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+
+    <title>OSE Character Generator</title>
+</head>
+<body>
+    <div id="sheet">
+        <div id="top">
+            <div id="char-info">
+                <label for="pc-name">PC</label>
+                <input id='pc-name' type="text">
+                <br>
+                <label for="pc-class">Class</label>
+                <input type="text" id="'pc-class">
+                <label for="pc-alignment">AL</label>
+                <select name="alignments" id="pc-alignment">
+                    <option value="lawful">Lawful</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="chaos">Chaos</option>
+                </select>
+                <br>
+                <label for="pc-title">Title</label>
+                <input type="text" id="'pc-title">
+                <label for="pc-level">Level</label>
+                <input type="text" id="pc-level">
+            </div>
+            <div id="ose-logo">
+                <img src="/images/ose_logo.webp" alt="Logo for Old School Essentials">
+            </div>
+        </div>
+        <div id="upper-middle">
+            <div id="pc-abilities" class="abils-saves">
+                <h1>Ability Scores</h1>
+                <label for="pc-str">STR</label>
+                <input type="text" id="pc-str"> <span>Melee att./damage, Open doors</span><br>
+                <label for="pc-int">INT</label>
+                <input type="text" id="pc-int"> <span>Languages, Literacy</span><br>
+                <label for="pc-wis">WIS</label>
+                <input type="text" id="pc-wis"> <span>Saves vs magic</span><br>
+                <label for="pc-dex">DEX</label>
+                <input type="text" id="pc-dex"> <span>Missile attacks, AC, Initiative</span><br>
+                <label for="pc-con">CON</label>
+                <input type="text" id="pc-con"> <span>Hit points</span><br>
+                <label for="pc-cha">CHA</label>
+                <input type="text" id="pc-cha"> <span>Reactions, #Retainers, Loyalty</span>
+                <p><b>Ability check:</b> Roll under or equal on 1d20</p>
+                
+            </div>
+            <div id="pc-saves" class="abils-saves">
+                <h1>Saving Throws</h1>
+                <label for="pc-d">D</label>
+                <input type="text" id="pc-d"> <span>Death, poison</span><br>
+                <label for="pc-w">W</label>
+                <input type="text" id="pc-w"> <span>Magic wands</span><br>
+                <label for="pc-p">P</label>
+                <input type="text" id="pc-p"> <span>Paralysis, petrification</span><br>
+                <label for="pc-b">B</label>
+                <input type="text" id="pc-b"> <span>Breath attacks</span><br>
+                <label for="pc-s">S</label>
+                <input type="text" id="pc-s"> <span>Spells, magic rods, magic staves</span><br>
+                <label for="pc-bonus-s">±</label>
+                <input type="text" id="pc-bonus-s"> <span>WIS modifier to saves vs magic</span>
+                <p><b>Saving throw:</b> Roll over or equal on 1d20</p>
+            </div>
+        </div>
+        <div id="lower-middle">
+            <div id="combat">
+                <h1>Combat</h1>
+                <label for="pc-hp">HP</label>
+                <input type="text" id="pc-hp"> <span>Current Hit Points</span><br>
+                <label for="pc-ac">AC</label>
+                <input type="text" id="pc-ac"> <span>Armor Class</span><br>
+                <label for="pc-att">Att</label>
+                <input type="text" id="pc-att"> <span>Attack Bonus</span>
+            </div>
+            <div id="combat-mods">
+                <label for="max-hp">Max</label>
+                <input type="text" id="max-hp"> <span>Maximum hit points</span> <br>
+                <label for="hp-bonus">±</label>
+                <input type="text" id="hp-bonus"> <span>CON modifier to hit points</span> <br>
+                <label for="un">Un</label>
+                <input type="text" id="un"> <span>Unarmoured AC: 10 + DEX modifier</span> <br>
+                <label for="un-bonus">±</label>
+                <input type="text" id="un-bonus"> <span>DEX modifier to Armor Class</span> <br>
+                <label for="melee">Mel</label>
+                <input type="text" id="melee"> <span>STR modifier to melee att./damage</span> <br>
+                <label for="missile">Mis</label>
+                <input type="text" id="missile"> <span>DEX modifier to missile attacks</span> 
+            </div>
+            <div id="encounter-explore">
+                <h1>Encounters</h1>
+                <label for="init">Init</label>
+                <input type="text" id="init"> <span> DEX modifier to initiative (optional)</span> <br>
+                <label for="init-mod">±</label>
+                <input type="text" id="init-mod"> <span> CHA modifier to reaction rolls</span> <br>
+                <h1>Exploration</h1>
+            </div>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>

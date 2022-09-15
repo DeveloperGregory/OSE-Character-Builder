@@ -1,0 +1,117 @@
+
+label{
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 3px;
+    width: 36px;
+}
+
+input{
+    font-weight: bold;
+    font-size: large;
+}
+
+select{
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.abils-saves{
+    height: auto;
+    width: 35%;
+}
+
+#sheet{
+    background-color:antiquewhite;
+    border-style: inset;
+    border-radius: 8px;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+#top{
+    display: flex;
+}
+
+#char-info{
+    height: auto;
+    margin-right: 15px;
+    width: 60%;
+}
+
+#lower-middle{
+    display: flex;
+}
+
+#combat{
+    height: auto;
+    width: 28%;
+}
+
+#combat input{
+    font-size: 24pt;
+    font-weight: bold;
+    height: 50px;
+    width: 90px;
+}
+
+#combat label{
+    margin-top: -15px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#combat-mods{
+    width: 40%;
+}
+
+#combat-mods input{
+    width: 36px;
+}
+
+#encounter-explore input{
+    width: 25px;
+}
+
+#max-hp{
+    margin-top: 85px;
+}
+
+#pc-name{
+    width: 70%;
+}
+
+#pc-abilities input{
+    width: 50px;
+}
+
+#pc-saves input{
+    width: 50px;
+}
+
+
+#pc-alignment{
+    width: 180px;
+}
+
+#ose-logo{
+    height: auto;
+    width: 20%;
+}
+
+#ose-logo img{
+    height: auto;
+    width: 90%;
+    
+}
+
+#upper-middle{
+    display: flex;
+}
