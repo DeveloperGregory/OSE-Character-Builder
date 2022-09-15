@@ -1,0 +1,25 @@
+{
+    "3" : {
+        "str" : {
+            "melee" : -3,
+            "od" : 1
+        },
+        "int" : {
+            "lang" : "Native (Broken Speech)",
+            "literacy" : "Illiterate"
+        },
+        "dex" : {
+            "ac" : -3,
+            "missile": -3,
+            "init" : -2
+        },
+        "wis" : {
+            "magic" : -3
+        },
+        "con" : {
+            "hp" : -3
+        }
+    }
+}
+
+    
