@@ -18,8 +18,75 @@
         },
         "con" : {
             "hp" : -3
+        },
+        "cha" : {
+            "npcRe" : -2,
+            "maxRe" : 1,
+            "reLoyal" : 4
+        },
+        "primeReq" : {
+            "xpMod" : -0.2
+        }
+    },
+    "4" : {
+        "str" : {
+            "melee" : -2,
+            "od" : 1
+        },
+        "int" : {
+            "lang" : "Native",
+            "literacy" : "Illiterate"
+        },
+        "dex" : {
+            "ac" : -2,
+            "missile": -2,
+            "init" : -1
+        },
+        "wis" : {
+            "magic" : -2
+        },
+        "con" : {
+            "hp" : -2
+        },
+        "cha" : {
+            "npcRe" : -1,
+            "maxRe" : 2,
+            "reLoyal" : 5
+        },
+        "primeReq" : {
+            "xpMod" : -0.2
+        }
+    },
+    "5" : {
+        "str" : {
+            "melee" : -2,
+            "od" : 1
+        },
+        "int" : {
+            "lang" : "Native",
+            "literacy" : "Illiterate"
+        },
+        "dex" : {
+            "ac" : -2,
+            "missile": -2,
+            "init" : -1
+        },
+        "wis" : {
+            "magic" : -2
+        },
+        "con" : {
+            "hp" : -2
+        },
+        "cha" : {
+            "npcRe" : -1,
+            "maxRe" : 2,
+            "reLoyal" : 5
+        },
+        "primeReq" : {
+            "xpMod" : -0.2
         }
     }
+
 }
 
     
