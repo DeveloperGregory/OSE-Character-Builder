@@ -25,18 +25,26 @@
                     <option value="neutral">Neutral</option>
                     <option value="chaos">Chaos</option>
                 </select>
+                <label for="hit-die">HD*</label>
+                <select name="hit-die" id="hit-die">
+                    <option value="4">d4</option>
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                </select>
                 <br>
                 <label for="pc-title">Title</label>
                 <input type="text" id="'pc-title">
                 <label for="pc-level">Level</label>
-                <input type="text" id="pc-level">
+                <input type="text" id="pc-level" value="1">
+                <p>* HD is your hit die</p>
             </div>
             <div id="ose-logo">
                 <img src="/images/ose-logo.png" alt="Logo for Old School Essentials">
             </div>
             <div>
                 <button id="reLoad">Reset Sheet</button>
-                <button id="roll-em">Roll Stats</button>
+                
             </div>
         </div>
         <div id="upper-middle">
@@ -55,6 +63,7 @@
                 <label for="pc-cha">CHA</label>
                 <input type="text" id="pc-cha" value=3> <span>Reactions, #Retainers, Loyalty</span>
                 <p><b>Ability check:</b> Roll under or equal on 1d20</p>
+                <button id="roll-em">Roll Stats</button>
                 
             </div>
             <div id="pc-saves" class="abils-saves">
@@ -93,12 +102,16 @@
                 <input type="text" id="pc-att"> <span>Attack Bonus</span>
             </div>
             <div id="combat-mods">
+                <label for="rolled-HP">Rolled HP</label> 
+                <input type="text" id="rolled-HP" value="1"> 
                 <label for="max-hp">Max</label>
                 <input type="text" id="max-hp"> <span>Maximum hit points</span> <br>
                 <label for="hp-bonus">±</label>
                 <input type="text" id="hp-bonus"> <span>CON modifier to hit points</span> <br>
                 <label for="un">Un</label>
                 <input type="text" id="un"> <span>Unarmoured AC: 10 + DEX modifier</span> <br>
+                <label for="armor-val">Armor Value</label>
+                <input type="text" id="armor-val" value="0">
                 <label for="ac-bonus">±</label>
                 <input type="text" id="ac-bonus"> <span>DEX modifier to Armor Class</span> <br>
                 <label for="melee">Mel</label>
