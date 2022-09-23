@@ -1,0 +1,100 @@
+Alchemist,Staff,Oil (1 flask)
+Animal trainer,Club,Pony
+Armorer,Hammer (as club),Iron helmet
+Astrologer,Dagger,Spyglass
+Barber,Razor (as dagger),Scissors
+Beadle,Staff,Holy Symbol
+Beekeeper,Staff,Jar of honey
+Blacksmith,Hammer (as club),Steel tongs
+Butcher,Cleaver (as axe),Side of beef
+Caravan guard,Short sword,Linen (1 yard)
+Cheesemaker,Cudgel (as staff),Stinky cheese
+Cobbler,Awl (as dagger),Shoehorn
+Confidence artist,Dagger,Quality cloak
+Cooper,Crowbar (as club),Barrel
+Costermonger,Knife (as dagger),fruit
+Cutpurse,Dagger,Small chest
+Ditch digger,Shovel (as staff),Fine dirt (1 lb.)
+Dwarven apothacarist,Cudgel (as staff),Steel vial
+Dwarven blacksmith,Hammer (as club),Mithril (1 oz.)
+Dwarven blacksmith,Hammer (as club),Mithril (1 oz.)
+Dwarven chest-maker,Chisel (as dagger),Wood (10 lbs)
+Dwarven herder,Staff,Sow
+Dwarven miner,Pick (as club),Lantern
+Dwarven miner,Pick (as club),Lantern
+Dwarven mushroom-farmer,Shovel,Sack
+Dwarven rat-catcher,Club,Net
+Dwarven stonemason,Hammer (as club),Fine stone (10 lbs)
+Dwarven stonemason,Hammer (as club),Fine stone (10 lbs)
+Elven artisan,Staff,Clay (1 lb.)
+Elven barrister,Quill (as dart),Book
+Elven chandler,Scissors (as dagger),Candles (20)
+Elven falconer,Dagger,Falcon
+Elven forester,Staff,Herbs (1 lb.)
+Elven forester,Staff,Herbs (1 lb.)
+Elven glassblower,Hammer (as club),Glass beads
+Elven navigator,Shortbow,Spyglass
+Elven sage,Dagger,Parchment and quill pen
+Elven sage,Dagger,Parchment and quill pen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Farmer,Pitchfork (as spear),Hen
+Fortune-teller,Dagger,Tarot deck
+Gambler,Club,Dice
+Gongfarmer,Trowel (as dagger),Sack of night soil
+Grave digger,Shovel (as staff),Trowel
+Grave digger,Shovel (as staff),Trowel
+Guild beggar,Sling,Crutches
+Guild beggar,Sling,Crutches
+Halfling chicken butcher,Handaxe,Chicken meat (5 lbs.)
+Halfling dyer,Staff,Fabric (3 yards)
+Halfling dyer,Staff,Fabric (3 yards)
+Halfling glovemaker,Awl (as dagger),Gloves (4 pairs)
+Halfling gypsy,Sling,Hex doll
+Halfling haberdasher,Scissors (as dagger),Fine suits (3 sets)
+Halfling mariner,Knife (as dagger),Sailcloth (2 yards)
+Halfling moneylender,Short sword,5 gp 10 sp 200 cp
+Halfling trader,Short sword,20 sp
+Halfling vagrant,Club,Begging bowl
+Healer,Club,Holy water (1 vial)
+Herbalist,Club,Herbs (1 lb.)
+Herder,Staff,Herding dog
+Hunter,Shortbow,Deer pelt
+Hunter,Shortbow,Deer pelt
+Indentured servant,Staff,Locket
+Jester,Dart,Silk clothes
+Jeweler,Dagger,Gem worth 20 gp
+Locksmith,Dagger,Fine tools
+Mendicant,Club,Cheese dip
+Mercenary,Longsword,Hide armor
+Merchant,Dagger,4 gp 14 sp 27 cp
+Miller/baker,Club,Flour (1 lb.)
+Minstrel,Dagger,Ukulele
+Noble,Longsword,Gold ring worth 10 gp
+Orphan,Club,Rag doll
+Ostler,Staff,Bridle
+Outlaw,Short sword,Leather armor
+Ropemaker,Knife (as dagger),Rope (100’)
+Scribe,Dart,Parchment (10 sheets)
+Shaman,Mace,Herbs (1 lb.)
+Slave,Club,Strange-looking rock
+Smuggler,Sling,Waterproof sack
+Soldier,Spear,Shield
+Squire,Longsword,Steel helmet
+Squire,Longsword,Steel helmet
+Tax collector,Longsword,100 cp
+Trapper,Sling,Badger pelt
+Trapper,Sling,Badger pelt
+Urchin,Stick (as club),Begging bowl
+Wainwright,Club,Pushcart
+Weaver,Dagger,Fine suit of clothes
+Wizard’s apprentice,Dagger,Black grimoire
+Woodcutter,Handaxe,Bundle of wood
+Woodcutter,Handaxe,Bundle of wood
+Woodcutter,Handaxe,Bundle of wood

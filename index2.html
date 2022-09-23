@@ -10,7 +10,11 @@
     <title>OSE Character Generator</title>
 </head>
 <body>
-
+    <div id="questionBox" class="hidden">
+        <p id="questionMessage"></p>
+        <button id="quesYes">Yes</button>
+        <button id="quesNo">No</button>
+    </div>
     <div id="sheet">
         <div id="top">
             <div id="char-info">
@@ -36,14 +40,19 @@
                 <label for="pc-title">Title</label>
                 <input type="text" id="'pc-title">
                 <label for="pc-level">Level</label>
-                <input type="text" id="pc-level" value="1">
+                <input type="text" id="pc-level" value="1"> <br>
+                <label for="pc-prof">Prof</label>
+                <input type="text" id="pc-prof">
+                <button id="prof-btn">Get Profession</button>
                 <p>* HD is your hit die</p>
             </div>
             <div id="ose-logo">
                 <img src="/images/ose-logo.png" alt="Logo for Old School Essentials">
             </div>
             <div>
-                <button id="reLoad">Reset Sheet</button>
+                <button id="reLoad">Reset Sheet</button><br>
+                <label for="player-name">Player Name:</label>
+                <input type="text" id="player-name">
                 
             </div>
         </div>

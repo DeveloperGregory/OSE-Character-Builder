@@ -1,0 +1,320 @@
+{
+    "profession": {
+        "Alchemist": {
+            "tool": "Staff",
+            "item": "Oil (1 flask)"
+        },
+        "Animal trainer": {
+            "tool": "Club",
+            "item": "Pony"
+        },
+        "Armorer": {
+            "tool": "Hammer (as club)",
+            "item": "Iron helmet"
+        },
+        "Astrologer": {
+            "tool": "Dagger",
+            "item": "Spyglass"
+        },
+        "Barber": {
+            "tool": "Razor (as dagger)",
+            "item": "Scissors"
+        },
+        "Beadle": {
+            "tool": "Staff",
+            "item": "Holy Symbol"
+        },
+        "Beekeeper": {
+            "tool": "Staff",
+            "item": "Jar of honey"
+        },
+        "Blacksmith": {
+            "tool": "Hammer (as club)",
+            "item": "Steel tongs"
+        },
+        "Butcher": {
+            "tool": "Cleaver (as axe)",
+            "item": "Side of beef"
+        },
+        "Caravan guard": {
+            "tool": "Short sword",
+            "item": "Linen (1 yard)"
+        },
+        "Cheesemaker": {
+            "tool": "Cudgel (as staff)",
+            "item": "Stinky cheese"
+        },
+        "Cobbler": {
+            "tool": "Awl (as dagger)",
+            "item": "Shoehorn"
+        },
+        "Confidence artist": {
+            "tool": "Dagger",
+            "item": "Quality cloak"
+        },
+        "Cooper": {
+            "tool": "Crowbar (as club)",
+            "item": "Barrel"
+        },
+        "Costermonger": {
+            "tool": "Knife (as dagger)",
+            "item": "fruit"
+        },
+        "Cutpurse": {
+            "tool": "Dagger",
+            "item": "Small chest"
+        },
+        "Ditch digger": {
+            "tool": "Shovel (as staff)",
+            "item": "Fine dirt (1 lb.)"
+        },
+        "Dwarven apothacarist": {
+            "tool": "Cudgel (as staff)",
+            "item": "Steel vial"
+        },
+        "Dwarven blacksmith": {
+            "tool": "Hammer (as club)",
+            "item": "Mithril (1 oz.)"
+        },
+        "Dwarven chest-maker": {
+            "tool": "Chisel (as dagger)",
+            "item": "Wood (10 lbs)"
+        },
+        "Dwarven herder": {
+            "tool": "Staff",
+            "item": "Sow"
+        },
+        "Dwarven miner": {
+            "tool": "Pick (as club)",
+            "item": "Lantern"
+        },
+        "Dwarven mushroom-farmer": {
+            "tool": "Shovel",
+            "item": "Sack"
+        },
+        "Dwarven rat-catcher": {
+            "tool": "Club",
+            "item": "Net"
+        },
+        "Dwarven stonemason": {
+            "tool": "Hammer (as club)",
+            "item": "Fine stone (10 lbs)"
+        },
+        "Elven artisan": {
+            "tool": "Staff",
+            "item": "Clay (1 lb.)"
+        },
+        "Elven barrister": {
+            "tool": "Quill (as dart)",
+            "item": "Book"
+        },
+        "Elven chandler": {
+            "tool": "Scissors (as dagger)",
+            "item": "Candles (20)"
+        },
+        "Elven falconer": {
+            "tool": "Dagger",
+            "item": "Falcon"
+        },
+        "Elven forester": {
+            "tool": "Staff",
+            "item": "Herbs (1 lb.)"
+        },
+        "Elven glassblower": {
+            "tool": "Hammer (as club)",
+            "item": "Glass beads"
+        },
+        "Elven navigator": {
+            "tool": "Shortbow",
+            "item": "Spyglass"
+        },
+        "Elven sage": {
+            "tool": "Dagger",
+            "item": "Parchment and quill pen"
+        },
+        "Farmer": {
+            "tool": "Pitchfork (as spear)",
+            "item": "Hen"
+        },
+        "Fortune-teller": {
+            "tool": "Dagger",
+            "item": "Tarot deck"
+        },
+        "Gambler": {
+            "tool": "Club",
+            "item": "Dice"
+        },
+        "Gongfarmer": {
+            "tool": "Trowel (as dagger)",
+            "item": "Sack of night soil"
+        },
+        "Grave digger": {
+            "tool": "Shovel (as staff)",
+            "item": "Trowel"
+        },
+        "Guild beggar": {
+            "tool": "Sling",
+            "item": "Crutches"
+        },
+        "Halfling chicken butcher": {
+            "tool": "Handaxe",
+            "item": "Chicken meat (5 lbs.)"
+        },
+        "Halfling dyer": {
+            "tool": "Staff",
+            "item": "Fabric (3 yards)"
+        },
+        "Halfling glovemaker": {
+            "tool": "Awl (as dagger)",
+            "item": "Gloves (4 pairs)"
+        },
+        "Halfling gypsy": {
+            "tool": "Sling",
+            "item": "Hex doll"
+        },
+        "Halfling haberdasher": {
+            "tool": "Scissors (as dagger)",
+            "item": "Fine suits (3 sets)"
+        },
+        "Halfling mariner": {
+            "tool": "Knife (as dagger)",
+            "item": "Sailcloth (2 yards)"
+        },
+        "Halfling moneylender": {
+            "tool": "Short sword",
+            "item": "5 gp 10 sp 200 cp"
+        },
+        "Halfling trader": {
+            "tool": "Short sword",
+            "item": "20 sp"
+        },
+        "Halfling vagrant": {
+            "tool": "Club",
+            "item": "Begging bowl"
+        },
+        "Healer": {
+            "tool": "Club",
+            "item": "Holy water (1 vial)"
+        },
+        "Herbalist": {
+            "tool": "Club",
+            "item": "Herbs (1 lb.)"
+        },
+        "Herder": {
+            "tool": "Staff",
+            "item": "Herding dog"
+        },
+        "Hunter": {
+            "tool": "Shortbow",
+            "item": "Deer pelt"
+        },
+        "Indentured servant": {
+            "tool": "Staff",
+            "item": "Locket"
+        },
+        "Jester": {
+            "tool": "Dart",
+            "item": "Silk clothes"
+        },
+        "Jeweler": {
+            "tool": "Dagger",
+            "item": "Gem worth 20 gp"
+        },
+        "Locksmith": {
+            "tool": "Dagger",
+            "item": "Fine tools"
+        },
+        "Mendicant": {
+            "tool": "Club",
+            "item": "Cheese dip"
+        },
+        "Mercenary": {
+            "tool": "Longsword",
+            "item": "Hide armor"
+        },
+        "Merchant": {
+            "tool": "Dagger",
+            "item": "4 gp 14 sp 27 cp"
+        },
+        "Miller/baker": {
+            "tool": "Club",
+            "item": "Flour (1 lb.)"
+        },
+        "Minstrel": {
+            "tool": "Dagger",
+            "item": "Ukulele"
+        },
+        "Noble": {
+            "tool": "Longsword",
+            "item": "Gold ring worth 10 gp"
+        },
+        "Orphan": {
+            "tool": "Club",
+            "item": "Rag doll"
+        },
+        "Ostler": {
+            "tool": "Staff",
+            "item": "Bridle"
+        },
+        "Outlaw": {
+            "tool": "Short sword",
+            "item": "Leather armor"
+        },
+        "Ropemaker": {
+            "tool": "Knife (as dagger)",
+            "item": "Rope (100’)"
+        },
+        "Scribe": {
+            "tool": "Dart",
+            "item": "Parchment (10 sheets)"
+        },
+        "Shaman": {
+            "tool": "Mace",
+            "item": "Herbs (1 lb.)"
+        },
+        "Slave": {
+            "tool": "Club",
+            "item": "Strange-looking rock"
+        },
+        "Smuggler": {
+            "tool": "Sling",
+            "item": "Waterproof sack"
+        },
+        "Soldier": {
+            "tool": "Spear",
+            "item": "Shield"
+        },
+        "Squire": {
+            "tool": "Longsword",
+            "item": "Steel helmet"
+        },
+        "Tax collector": {
+            "tool": "Longsword",
+            "item": "100 cp"
+        },
+        "Trapper": {
+            "tool": "Sling",
+            "item": "Badger pelt"
+        },
+        "Urchin": {
+            "tool": "Stick (as club)",
+            "item": "Begging bowl"
+        },
+        "Wainwright": {
+            "tool": "Club",
+            "item": "Pushcart"
+        },
+        "Weaver": {
+            "tool": "Dagger",
+            "item": "Fine suit of clothes"
+        },
+        "Wizard’s apprentice": {
+            "tool": "Dagger",
+            "item": "Black grimoire"
+        },
+        "Woodcutter": {
+            "tool": "Handaxe",
+            "item": "Bundle of wood"
+        }
+    }
+}

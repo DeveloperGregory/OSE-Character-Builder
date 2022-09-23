@@ -2,7 +2,8 @@
 const bdDom = document.body;
 //define all html buttons
 const reLdBtn = document.getElementById('reLoad');
-const rollStatsBtn = document.getElementById('roll-em')
+const rollStatsBtn = document.getElementById('roll-em');
+const getProfBtn = document.getElementById('prof-btn');
 
 //define ability input boxes
 const strBox = document.getElementById('pc-str');
@@ -25,7 +26,12 @@ const hpBox = document.getElementById('pc-hp');
 const rolledHPBox = document.getElementById('rolled-HP');
 const levelBox = document.getElementById('pc-level');
 const hdSelect = document.getElementById('hit-die');
+const profBox = document.getElementById('pc-prof');
+const aswText = document.getElementById('asw-text');
+const unBox = document.getElementById('un');
+const initMod = document.getElementById('init-mod');
 
+const statMin = 55;
 
 // Variables for adding inputbox values
 let rolledHP = 1;
@@ -33,6 +39,9 @@ let bonusHP = 0;
 let addedHP = 0;
 let level = 1;
 let hitDie = 4;
+let profs = {"profession" : {}};
+
+let statsAgain = false;
 
 //ability benefits object
 const abilData = {
@@ -509,12 +518,37 @@ const abilData = {
 
 
 
-
 function getRandom(num){
     return Math.floor(Math.random() * num + 1);
 }
 
+function questionBox(question){
+    document.getElementById('questionBox').classList.remove('hidden');
+    document.getElementById('questionMessage').innerHTML = question;
+}
 
+function getProfession(){
+    aswText.value = "";
+    fetch("profs.txt")
+    .then(data => data.text())
+    .then(y => {
+        let newArr = y.split("\r");
+        let temp = []
+        for(let i = 0; i < newArr.length; i++){
+            newArr[i] = newArr[i].replace("\n","")
+            temp = newArr[i].split(",");
+            profs["profession"][temp[0]] = {"tool" : temp[1], "item" : temp[2]}
+        }
+        let keys = Object.keys(profs["profession"]);
+        let newProf = getRandom(keys.length); 
+        profBox.value = keys[newProf];
+        aswText.value = aswText.value + "\n" + profs["profession"][keys[newProf]]["tool"]
+        aswText.value = aswText.value + "\n" + profs["profession"][keys[newProf]]["item"]
+
+    }); 
+    
+    
+}
 
 function rollStats(){
     let abilities = [];
@@ -527,13 +561,24 @@ function rollStats(){
         dice = [];
         
     }
-    
     strBox.value = abilities[0];
     intBox.value = abilities[1];
     wisBox.value = abilities[2];
     dexBox.value = abilities[3];
     conBox.value = abilities[4];
     chaBox.value = abilities[5];
+    if(abilities.reduce((a,b) => a + b, 0) <= statMin){
+        statsAgain =  confirm("Your stats look low.  Do you want to roll them again?");
+        if(statsAgain){
+            rollStats();
+            return
+        }
+        statsAgain = false;
+    }
+    rollStatsBtn.disabled = true;
+
+    console.log(abilities + ":" + abilities.reduce((a,b) => a + b, 0));
+    
 
     updateForm();
 }
@@ -541,36 +586,7 @@ function rollStats(){
 function updateForm(){
     hitDie = hdSelect.value;
     level = levelBox.value;
-    
-    //make sure number of stat is a number and in the range of 3-18
-    if(strBox.value > 2 && strBox.value < 19){
-        //handling bonuses granted by str
-        meleeBox.value = abilData[strBox.value].str.melee;
-        odBox.value = abilData[strBox.value].str.od;
-        //handling bonuses granted by wis
-        pcBonusS.value = abilData[wisBox.value].wis.magic;
-        //handling bonuses granted by dex
-        missileBox.value = abilData[dexBox.value].dex.missile;
-        acBonus.value = abilData[dexBox.value].dex.ac;
-        initBox.value = abilData[dexBox.value].dex.init;
-        //handling bonuses granted by con
-        hpBonus.value = abilData[conBox.value].con.hp;
-        
-        rolledHP = parseInt(rolledHPBox.value);
-        level = parseInt(levelBox.value);
-        bonusHP = parseInt(hpBonus.value);
-        bonusHP = bonusHP * level;
-        addedHP = rolledHP + bonusHP;
-        if(addedHP < 1){
-            alert("Adjusting hit points to 1.  Character cannot have less than 1 hit point.");
-            addedHP = 1;
-        }
-        maxHpBox.value = addedHP;
 
-    }else{
-        alert("Stats are between 3 and 18")
-    }
-    
     let totHP = [];
     
     for(let d = 0; d < level; d++){
@@ -583,6 +599,41 @@ function updateForm(){
     rolledHPBox.value = newHP;
     totHP = [];
     
+    //make sure number of stat is a number and in the range of 3-18
+    if(strBox.value > 2 && strBox.value < 19){
+        //handling bonuses granted by str
+        meleeBox.value = abilData[strBox.value].str.melee;
+        odBox.value = abilData[strBox.value].str.od;
+        //handling bonuses granted by wis
+        pcBonusS.value = abilData[wisBox.value].wis.magic;
+        //handling bonuses granted by dex
+        missileBox.value = abilData[dexBox.value].dex.missile;
+        acBonus.value = abilData[dexBox.value].dex.ac;
+        initBox.value = abilData[dexBox.value].dex.init;
+        unBox.value = 10 + abilData[dexBox.value].dex.ac;
+        //handling bonuses granted by con
+        hpBonus.value = abilData[conBox.value].con.hp;
+        rolledHP = parseInt(rolledHPBox.value);
+        level = parseInt(levelBox.value);
+        bonusHP = parseInt(hpBonus.value);
+        bonusHP = bonusHP * level;
+        console.log(bonusHP)
+        addedHP = rolledHP + bonusHP;
+        if(addedHP < 1){
+            alert("Adjusting hit points to 1.  Character cannot have less than 1 hit point.");
+            addedHP = 1;
+        }
+        maxHpBox.value = addedHP;
+
+        //handling bonuses granted by cha
+        console.log(abilData[chaBox.value].cha.npcRe)
+        initMod.value = abilData[chaBox.value].cha.npcRe;
+    }else{
+        alert("Stats are between 3 and 18")
+    }
+    
+    
+    
 
 }
 
@@ -592,3 +643,4 @@ function updateForm(){
 bdDom.addEventListener("change",updateForm); //updates the form
 reLdBtn.addEventListener('click', () => location.reload());  //reloads the page
 rollStatsBtn.addEventListener('click', rollStats)
+getProfBtn.addEventListener('click', getProfession);
